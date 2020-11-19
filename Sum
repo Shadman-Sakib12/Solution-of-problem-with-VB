@@ -1,4 +1,4 @@
- Sub Main()
+Sub Main()
         Dim a As Integer
         Dim b As Integer
         Dim SOMA As Integer
@@ -13,3 +13,31 @@
         SOMA = a + b
 
         Console.WriteLine("SOMA = " & SOMA)
+End Sub
+
+ 
+ Sub Main()
+        Dim number As Integer
+        Dim a As Double
+        Dim b As Integer
+        Dim salary As Integer
+        Console.WriteLine("Enter the number")
+
+        number = Console.ReadLine
+
+        Console.WriteLine("Enter the hours worked")
+
+        a = Console.ReadLine
+
+        Console.WriteLine("Enter the ammount paid per hour")
+
+        b = Console.ReadLine
+
+        salary = a * b
+
+        Console.WriteLine("NUMBER = " & number)
+        Console.WriteLine("SALARY = " & salary)
+
+
+
+ End Sub
