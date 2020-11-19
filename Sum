@@ -1,3 +1,4 @@
+Question no. 1
 Sub Main()
         Dim a As Integer
         Dim b As Integer
@@ -15,7 +16,7 @@ Sub Main()
         Console.WriteLine("SOMA = " & SOMA)
 End Sub
 
- 
+ Question no. 2
  Sub Main()
         Dim number As Integer
         Dim a As Double
@@ -41,3 +42,35 @@ End Sub
 
 
  End Sub
+
+
+Question no. 3
+Sub main()
+        Dim a As Integer
+        Dim b As Integer
+        Dim c As Integer
+        Dim d As Integer
+        Dim distance As Double
+
+        Console.WriteLine("Enter x1")
+
+        a = Console.ReadLine
+
+        Console.WriteLine("Enter x2")
+
+        b = Console.ReadLine
+
+        Console.WriteLine("Enter y1")
+
+        c = Console.ReadLine
+
+        Console.WriteLine("Enter y2")
+
+        d = Console.ReadLine
+
+        distance = Math.Sqrt(((b - a) * (b - a)) + ((d - c) * (d - c)))
+
+        Console.WriteLine("distance = " & distance)
+
+    End Sub
+
