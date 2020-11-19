@@ -73,4 +73,45 @@ Sub main()
         Console.WriteLine("distance = " & distance)
 
     End Sub
+    
+    
+    
+    Question no. 5
+    Sub main()
+      Dim a As Integer
+        Dim b As Integer
+        Dim total As Double
+        Console.WriteLine("enter the serial number between ( 1 - 5 ) ")
+        a = Console.ReadLine
+
+        Console.WriteLine("enter the quantity ")
+        b = Console.ReadLine
+
+
+        If a = 1 Then
+            total = b * 4
+
+        ElseIf a = 2 Then
+
+            total = b * 4.5
+
+        ElseIf a = 3 Then
+
+            total = b * 5
+
+        ElseIf a = 4 Then
+
+            total = b * 2
+
+        ElseIf a = 5 Then
+
+            total = b * 1.5
+
+        End If
+
+
+        Console.WriteLine("total : $" & total)
+
+
+    End Sub
 
