@@ -1,0 +1,60 @@
+Read the employee's salary, calculate and print the new employee's salary, as well the money earned and the increase percentual obtained by the employee, with corresponding messages in Portuguese, as the below example.
+Input
+The input contains only a floating-point number, with 2 digits after the decimal point.
+
+
+Sub main()
+
+        Dim a As Double
+        Dim b As Double
+        Dim salary As Double
+        Dim c As Double
+        Dim d As Double
+
+        Console.WriteLine("Enter the current salary")
+        a = Console.ReadLine
+        If a >= 0 & a <= 400.0 Then
+            c = 15 / 100
+            d = c * a
+
+            salary = a + d
+            b = salary - a
+
+        ElseIf a >= 400.01 & a <= 800.0 Then
+            c = 12 / 100
+            d = c * a
+
+            salary = a + d
+            b = salary - a
+
+        ElseIf a >= 800.01 & a <= 1200.0 Then
+            c = 10 / 100
+            d = c * a
+
+            salary = a + d
+            b = salary - a
+
+        ElseIf a >= 1200.01 & a <= 2000.0 Then
+            c = 7 / 100
+            d = c * a
+
+            salary = a + d
+            b = salary - a
+
+        ElseIf a > 2000.0 Then
+            c = 4 / 100
+            d = c * a
+
+            salary = a + d
+            b = salary - a
+
+        End If
+
+
+        Console.WriteLine("new salary = " & salary)
+
+        Console.WriteLine("money earned = " & b)
+
+        Console.WriteLine("in percentage = " & c)
+
+    End Sub
