@@ -1,0 +1,14 @@
+Make a program that calculates and shows the volume of a sphere being provided the value of its radius (R) . The formula to calculate the volume is: (4/3) * pi * R3. Consider (assign) for pi the value 3.14159.
+
+answer
+
+Sub main()
+
+        Dim a As Double
+        Dim v As Double
+        Console.WriteLine("enter the radius of the sphere")
+        a = Console.ReadLine
+        v = (4 / 3) * (3.14159) * (a ^ 3)
+
+        Console.WriteLine("the volume = " & v)
+    End Sub
