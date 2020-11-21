@@ -1,0 +1,58 @@
+ Make a program that reads five integer values. Count how many   of these values are even, 
+ odd, positive and negative. Print these information like following example.
+
+Input
+The input will be 5 integer values.
+
+Output
+Print a message like the following example with all letters in lowercase, indicating how many of these values ​​are even, odd, positive and negative.
+
+Input Sample	Output Sample
+-5            3 valor(es) par(es)
+0             3 valor(es) par(es)
+-3            1 valor(es) positivo(s)
+-4            3 valor(es) negativo(s)
+12
+
+
+ANSWER
+ 
+ 
+ 
+ 
+ 
+ 
+ Sub main()
+
+        Dim a As Integer = 0
+        Dim b As Integer = 0
+        Dim c As Integer = 0
+        Dim d As Integer = 0
+        Dim e As Integer
+        Dim f As Integer
+        Dim g As Integer = 0
+
+        Console.WriteLine("Enter the numbers")
+        For e = 0 To 4
+            f = Console.ReadLine
+            If f > 0 Then
+                a = a + 1
+            ElseIf f < 0 Then
+                b = b + 1
+            ElseIf c = f Mod 2 Then
+                If c = 0 Then
+                    d = d + 1
+                Else g = g + 1
+
+                End If
+
+            End If
+
+        Next
+
+        Console.WriteLine("odd number = " & d)
+        Console.WriteLine("even number = " & g)
+        Console.WriteLine("positive number = " & a)
+        Console.WriteLine("negetive number = " & b)
+
+    End Sub
