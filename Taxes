@@ -1,0 +1,41 @@
+     In an imaginary country called Lisarb, all the people are very happy to pay their taxes because they know that doesn’t exist corrupt politicians and the taxes are used to benefit the population, without any misappropriation. The currency of this country is Rombus, whose symbol is R$.
+
+Read a value with 2 digits after the decimal point, equivalent to the salary of a Lisarb inhabitant. Then print the due value that this person must pay of taxes, according to the table below.   
+        
+        answer
+        
+        Dim a As Double
+        Dim e As Double
+        Dim c As Double
+        Dim d As Double
+
+        Console.WriteLine("Enter the current salary")
+        a = Console.ReadLine
+        If a <= 2000.0 Then
+            Console.WriteLine("no tax")
+
+
+
+        ElseIf a >= 2000.01 & a <= 3000.0 Then
+            c = 8 / 100
+            d = a - 2000.0
+            e = d * c
+
+        ElseIf a >= 3000.01 & a <= 4500.0 Then
+            c = 18 / 100
+            d = a - 2000.0
+            e = d * c
+
+        ElseIf a > 4500.0 Then
+            c = 28 / 100
+            d = a - 2000.0
+            e = d * c
+
+
+
+        End If
+
+
+        Console.WriteLine("tax = " & e)
+
+    End Sub
