@@ -1,0 +1,32 @@
+Read two integer values X and Y. Print the sum of all odd values between them.
+
+ANSWER
+
+
+Sub main()
+
+        Dim a As Integer = 0
+        Dim b As Integer
+        Dim c As Integer
+        Dim d As Integer
+        Dim e As Integer = 0
+        Console.WriteLine("enter the first number")
+        c = Console.ReadLine
+
+
+        Console.WriteLine("enter the second number")
+        d = Console.ReadLine
+
+        For b = c To (d - 1)
+            a = b Mod 2
+            If a <> 0 Then
+                e = e + b
+
+            End If
+
+        Next
+        Console.WriteLine("the sum of the odd numbers is " & e)
+
+
+
+    End Sub
