@@ -1,0 +1,24 @@
+ Read an integer value X (1 <= X <= 1000).  Then print the odd numbers from 1 to X, each one in a line, including X if is the case.
+ 
+ ANSWER
+ 
+ 
+ Sub main()
+
+        Dim a As Integer = 0
+        Dim b As Integer
+        Dim c As Integer
+        Console.WriteLine("enter the number")
+        c = Console.ReadLine
+
+
+        While a <> (c + 1)
+            b = a Mod 2
+            If b <> 0 Then
+                Console.WriteLine(a)
+            End If
+            a = a + 1
+
+        End While
+
+    End Sub
