@@ -1,0 +1,19 @@
+Write a program that prints all even numbers between 1 and 100, including them if it is the case.
+
+ANSWER
+
+Sub main()
+
+        Dim a As Integer = 0
+        Dim b As Integer
+
+        While a <> 101
+            b = a Mod 2
+            If b <> 0 Then
+                Console.WriteLine(a)
+            End If
+            a = a + 1
+
+        End While
+
+    End Sub
