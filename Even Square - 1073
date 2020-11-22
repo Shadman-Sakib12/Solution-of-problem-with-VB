@@ -1,0 +1,17 @@
+ Sub main()
+        Dim a As Integer
+        Dim b As Integer
+        Dim c As Integer
+        Dim d As Integer
+        Console.WriteLine("enter the number")
+        a = Console.ReadLine
+        For b = 1 To a
+            c = b Mod 2
+            If c = 0 Then
+                d = b ^ 2
+                Console.WriteLine(b & " ^2 = " & d)
+
+            End If
+        Next
+
+    End Sub
