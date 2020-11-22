@@ -1,0 +1,35 @@
+Read an integer N and compute all its divisors.
+
+Input
+The input file contains an integer value.
+
+Output
+Write all positive divisors of N, one value per line.
+
+Input Sample	Output Sample
+6             1
+              2
+              3
+              6
+
+
+
+
+
+Sub main()
+        Dim a As Integer
+        Dim c As Integer
+        Dim d As Integer
+
+        Console.WriteLine("enter the first number")
+        a = Console.ReadLine
+
+        For c = 1 To a
+            d = a Mod c
+            If d = 0 Then
+                Console.WriteLine(c)
+            End If
+
+        Next
+
+    End Sub
