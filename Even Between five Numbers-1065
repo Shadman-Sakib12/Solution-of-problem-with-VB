@@ -1,0 +1,23 @@
+Sub main()
+        Dim a As Integer
+        Dim b As Integer
+        Dim c As Integer
+        Dim d As Integer = 0
+        Console.WriteLine("enter the five number")
+        For b = 0 To 4
+            a = Console.ReadLine
+            c = a Mod 2
+            If c = 0 Then
+                d = d + 1
+
+
+            End If
+        Next
+        Console.WriteLine("even numbers = " & d)
+
+
+
+
+
+
+    End Sub
